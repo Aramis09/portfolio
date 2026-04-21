@@ -5,7 +5,9 @@ export function Hero() {
   return (
  <section
   id="home"
-  className="relative min-h-screen px-6 pt-24 pb-12 bg-linear-to-bl  from-[#2e5bff] from-10% via-black via-50% to-black"
+  // className="relative min-h-screen px-6 pt-24 pb-12 bg-linear-to-bl  from-[#2e5bff] from-10% via-black via-50% to-black"
+  className="relative min-h-screen px-6 pt-24 pb-12 "
+
 >
       <div className="mx-auto max-w-7xl">
         {/* Available Badge */}
