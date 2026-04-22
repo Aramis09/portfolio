@@ -12,7 +12,7 @@ export function Footer() {
             </span>
           </div>
           <p className="text-center text-sm text-muted-foreground">
-            &copy; {new Date().getFullYear()} The Synthetic Atelier | ARAMIS JAIME
+            &copy; {new Date().getFullYear()} ARAMIS JAIME
           </p>
         </div>
       </div>

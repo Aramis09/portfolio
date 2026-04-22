@@ -101,7 +101,7 @@ export default function Home() {
           value: 80,
         },
         opacity: {
-          value: 0.9,
+          value: 0.5,
         },
         shape: {
           type: "circle",
@@ -117,29 +117,26 @@ export default function Home() {
 
   if (init) {
     return (
-      <main className="min-h-screen pb-16 md:pb-0 bg-linear-to-bl  from-[#2e5bff] from-10% via-black via-50% to-black ">
+      <HomeContentSSR>
         <Particles
           id="tsparticles"
           particlesLoaded={particlesLoaded}
           options={options}
         />
-        <Header />
-        <Hero />
-        <Works />
-        <Experience />
-        <Skills />
-        <Contact />
-        <Footer />
-        <BottomNav />
-      </main>
+      </HomeContentSSR>
     );
   }
 
+  return <HomeContentSSR />;
+}
+
+function HomeContentSSR({ children }: { children?: React.ReactNode }) {
   return (
-    <main className="min-h-screen pb-16 md:pb-0 ">
+    <main className="min-h-screen pb-16 md:pb-0 bg-linear-to-bl  from-[#2e5bff] from-10% via-black via-50% to-black ">
+      {children}
       <Header />
       <Hero />
-      <Works />
+      {/* <Works /> */}
       <Experience />
       <Skills />
       <Contact />

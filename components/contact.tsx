@@ -1,5 +1,13 @@
-import { Mail, MapPin, Linkedin, Github, ArrowUpRight } from "lucide-react";
+import {
+  Mail,
+  MapPin,
+  Linkedin,
+  Github,
+  ArrowUpRight,
+  CarFront,
+} from "lucide-react";
 import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 export function Contact() {
   return (
@@ -11,7 +19,8 @@ export function Contact() {
             Get in Touch
           </h2>
           <p className="mt-3 max-w-md text-muted-foreground">
-            Have a project in mind? Let&apos;s work together to bring your ideas to life.
+            Have a project in mind? Let&apos;s work together to bring your ideas
+            to life.
           </p>
         </div>
 
@@ -27,7 +36,9 @@ export function Contact() {
             </div>
             <div className="flex-1">
               <p className="text-sm text-muted-foreground">Email</p>
-              <p className="font-medium text-foreground">aramisjaime48@gmail.com</p>
+              <p className="font-medium text-foreground">
+                aramisjaime48@gmail.com
+              </p>
             </div>
             <ArrowUpRight className="h-5 w-5 text-muted-foreground transition-transform group-hover:translate-x-1 group-hover:-translate-y-1 group-hover:text-primary" />
           </a>
@@ -39,10 +50,25 @@ export function Contact() {
             </div>
             <div>
               <p className="text-sm text-muted-foreground">Location</p>
-              <p className="font-medium text-foreground">Santiago del Estero, Argentina</p>
+              <p className="font-medium text-foreground">
+                Santiago del Estero, Argentina
+              </p>
+            </div>
+          </div>
+          <div className="flex items-center gap-4 rounded-2xl bg-surface-container-low p-6">
+            <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-primary/10">
+              <CarFront className="h-6 w-6 text-primary" />
+            </div>
+            <div>
+              <p className="text-sm text-muted-foreground">Open to relocation</p>
+              <p className="font-medium text-foreground">
+                Cordoba / Buenos Aires / Abroad
+              </p>
             </div>
           </div>
         </div>
+
+
 
         {/* Social Links */}
         <div className="mt-8 flex flex-wrap gap-4">
@@ -52,14 +78,14 @@ export function Contact() {
             size="lg"
             className="rounded-full border-border bg-transparent text-foreground hover:bg-surface-container-high"
           >
-            <a
-              href="https://linkedin.com/in/aramisjaime"
+            <Link
+              href="https://www.linkedin.com/in/aramisdev"
               target="_blank"
               rel="noopener noreferrer"
             >
               <Linkedin className="mr-2 h-5 w-5" />
               LinkedIn
-            </a>
+            </Link>
           </Button>
           <Button
             asChild
@@ -68,7 +94,7 @@ export function Contact() {
             className="rounded-full border-border bg-transparent text-foreground hover:bg-surface-container-high"
           >
             <a
-              href="https://github.com/aramisjaime"
+              href="https://github.com/Aramis09"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -84,7 +110,8 @@ export function Contact() {
             Ready to start a project?
           </h3>
           <p className="mx-auto mt-2 max-w-md text-muted-foreground">
-            I&apos;m currently available for freelance work and exciting opportunities.
+            I&apos;m currently available for freelance work and exciting
+            opportunities.
           </p>
           <Button
             asChild

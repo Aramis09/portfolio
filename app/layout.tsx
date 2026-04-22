@@ -21,7 +21,7 @@ const jetbrainsMono = JetBrains_Mono({
 export const metadata: Metadata = {
   title: 'Aramis Jaime | AI-Driven Fullstack Developer',
   description: 'Agile AI-Driven Fullstack Developer with 3 years of experience in product startups, software factories, and freelance work.',
-  generator: 'v0.app',
+  generator: 'aramis jaime portfolio',
   icons: {
     icon: [
       {

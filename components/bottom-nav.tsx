@@ -6,7 +6,7 @@ const navItems = [
   { icon: Home, label: "HOME", href: "#home" },
   { icon: Briefcase, label: "WORK", href: "#experience" },
   { icon: Layers, label: "SKILLS", href: "#skills" },
-  { icon: FolderKanban, label: "PROJECT", href: "#experience" },
+  // { icon: FolderKanban, label: "PROJECT", href: "#experience" },
   { icon: Mail, label: "MAIL", href: "#contact" },
 ];
 
